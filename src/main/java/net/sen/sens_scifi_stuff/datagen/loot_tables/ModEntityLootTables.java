@@ -19,18 +19,18 @@ public class ModEntityLootTables extends ModEntityLootHelper {
 
     @Override
     public void generate() {
-        this.add
-                (ModEntities.SPEEDER_ENTITY.get(), LootTable.lootTable()
-                        .withPool(
-                                LootPool.lootPool()
-                                        .setRolls(ConstantValue.exactly(1))
-                                        .add(
-                                                LootItem.lootTableItem(ModItems.SPEEDER_ITEM.get())
-                                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0f, 2.0f)))
-                                                        .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(0.0f, 1.0f)))
-                                                        .when(LootItemKilledByPlayerCondition.killedByPlayer())
-                                        )
-                        )
-        );
+//        this.add
+//                (ModEntities.SPEEDER_ENTITY.get(), LootTable.lootTable()
+//                        .withPool(
+//                                LootPool.lootPool()
+//                                        .setRolls(ConstantValue.exactly(1))
+//                                        .add(
+//                                                LootItem.lootTableItem(ModItems.SPEEDER_ITEM.get())
+//                                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0f, 2.0f)))
+//                                                        .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(0.0f, 1.0f)))
+//                                                        .when(LootItemKilledByPlayerCondition.killedByPlayer())
+//                                        )
+//                        )
+//        );
     }
 }

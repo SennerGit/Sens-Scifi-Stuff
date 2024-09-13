@@ -51,7 +51,7 @@ public class ModDatagenHandler {
 
         generator.addProvider(event.includeServer(), datapackProvider);
         generator.addProvider(event.includeServer(), new ModRecipeProvider(output, lookupProvider));
-//        generator.addProvider(event.includeServer(), new ModLootTableProvider(output, lookupProvider));
+        generator.addProvider(event.includeServer(), new ModLootTableProvider(output, lookupProvider));
 
         //Tags
         ModBlockTagsProvider blockTags = new ModBlockTagsProvider(output, lookupProvider, helper);

@@ -10,6 +10,5 @@ import java.util.function.BiConsumer;
 public record ModChestLootTables(HolderLookup.Provider provider) implements LootTableSubProvider {
     @Override
     public void generate(BiConsumer<ResourceKey<LootTable>, LootTable.Builder> output) {
-
     }
 }
