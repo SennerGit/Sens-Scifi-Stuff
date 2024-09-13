@@ -26,6 +26,14 @@ public class ModEntities {
         return ENTITIES.register(name, () -> EntityType.Builder.<E>of(factory, category).sized(width, height).build(name));
     }
 
+    /*
+    Modified Animals
+     */
+
+    /*
+    Clones
+     */
+
 //    private static <E extends Entity> Supplier<EntityType<E>> createEntityType(String name, EntityType.EntityFactory<E> factory, MobCategory category, float width, float height, int primaryColour, int secondaryColour) {
 //        Supplier<EntityType<E>> entityType = ENTITIES.register(name, () -> EntityType.Builder.<E>of(factory, category).sized(width, height).build(name));
 //        createSpawnEgg(entityType, primaryColour, secondaryColour);

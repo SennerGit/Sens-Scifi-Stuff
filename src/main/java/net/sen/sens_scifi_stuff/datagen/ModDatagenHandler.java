@@ -1,18 +1,30 @@
 package net.sen.sens_scifi_stuff.datagen;
 
+import net.minecraft.DetectedVersion;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.metadata.PackMetadataGenerator;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
+import net.minecraft.server.packs.metadata.pack.PackMetadataSection;
+import net.minecraft.util.InclusiveRange;
 import net.minecraft.world.item.armortrim.TrimMaterials;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.sen.sens_scifi_stuff.SensScifiStuff;
 import net.sen.sens_scifi_stuff.datagen.language.EnUsLanguageProvider;
+import net.sen.sens_scifi_stuff.datagen.loot_tables.ModLootTableProvider;
+import net.sen.sens_scifi_stuff.datagen.recipes.ModRecipeProvider;
+import net.sen.sens_scifi_stuff.datagen.tags.ModBlockTagsProvider;
+import net.sen.sens_scifi_stuff.datagen.tags.ModEntityTagsProvider;
+import net.sen.sens_scifi_stuff.datagen.tags.ModItemTagsProvider;
 
+import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, modid = SensScifiStuff.MODID)
@@ -22,16 +34,38 @@ public class ModDatagenHandler {
         DataGenerator generator = event.getGenerator();
         PackOutput output = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
-        CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
+        //Automating stuff
         addArmorTrims(existingFileHelper);
-
-        //Server
 
         //Client
         generator.addProvider(event.includeClient(), new EnUsLanguageProvider(output));
         generator.addProvider(event.includeClient(), new ModBlockStateProvider(output, existingFileHelper));
         generator.addProvider(event.includeClient(), new ModItemModelProvider(output, existingFileHelper));
+
+        //Registry-based stuff
+        DatapackBuiltinEntriesProvider datapackProvider = new ModRegistryDataGenerator(output, event.getLookupProvider());
+        CompletableFuture<HolderLookup.Provider> lookupProvider = datapackProvider.getRegistryProvider();
+
+//        generator.addProvider(event.includeServer(), new ModLootTableProvider(output, lookupProvider));
+
+        //Server
+
+        //Tags
+        ModBlockTagsProvider blockTags = new ModBlockTagsProvider(output, lookupProvider, existingFileHelper);
+        generator.addProvider(event.includeServer(), blockTags);
+        generator.addProvider(event.includeServer(), new ModItemTagsProvider(output, lookupProvider, blockTags.contentsGetter(), existingFileHelper));
+        generator.addProvider(event.includeServer(), new ModEntityTagsProvider(output, lookupProvider, existingFileHelper));
+
+        //Recipes
+        generator.addProvider(event.includeServer(), new ModRecipeProvider(output, lookupProvider));
+
+        //pack.meta
+        generator.addProvider(true, new PackMetadataGenerator(output).add(PackMetadataSection.TYPE, new PackMetadataSection(
+                Component.literal("Resources for Sen's Sci-Fi Stuff"),
+                DetectedVersion.BUILT_IN.getPackVersion(PackType.SERVER_DATA),
+                Optional.of(new InclusiveRange<>(0, Integer.MAX_VALUE))
+        )));
     }
 
     private static void addArmorTrims(ExistingFileHelper helper) {
