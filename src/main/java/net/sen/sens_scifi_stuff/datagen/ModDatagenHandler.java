@@ -19,6 +19,8 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.sen.sens_scifi_stuff.SensScifiStuff;
 import net.sen.sens_scifi_stuff.datagen.language.EnUsLanguageProvider;
 import net.sen.sens_scifi_stuff.datagen.loot_tables.ModLootTableProvider;
+import net.sen.sens_scifi_stuff.datagen.models.ModBlockStateProvider;
+import net.sen.sens_scifi_stuff.datagen.models.ModItemModelProvider;
 import net.sen.sens_scifi_stuff.datagen.recipes.ModRecipeProvider;
 import net.sen.sens_scifi_stuff.datagen.tags.ModBlockTagsProvider;
 import net.sen.sens_scifi_stuff.datagen.tags.ModEntityTagsProvider;
@@ -27,38 +29,35 @@ import net.sen.sens_scifi_stuff.datagen.tags.ModItemTagsProvider;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, modid = SensScifiStuff.MODID)
+@EventBusSubscriber(modid = SensScifiStuff.MODID, bus = EventBusSubscriber.Bus.MOD)
 public class ModDatagenHandler {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
-        PackOutput output = generator.getPackOutput();
-        ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
+        PackOutput output = event.getGenerator().getPackOutput();
+        ExistingFileHelper helper = event.getExistingFileHelper();
 
         //Automating stuff
-        addArmorTrims(existingFileHelper);
+        addArmorTrims(helper);
 
         //Client
         generator.addProvider(event.includeClient(), new EnUsLanguageProvider(output));
-        generator.addProvider(event.includeClient(), new ModBlockStateProvider(output, existingFileHelper));
-        generator.addProvider(event.includeClient(), new ModItemModelProvider(output, existingFileHelper));
+        generator.addProvider(event.includeClient(), new ModBlockStateProvider(output, helper));
+        generator.addProvider(event.includeClient(), new ModItemModelProvider(output, helper));
 
         //Registry-based stuff
         DatapackBuiltinEntriesProvider datapackProvider = new ModRegistryDataGenerator(output, event.getLookupProvider());
         CompletableFuture<HolderLookup.Provider> lookupProvider = datapackProvider.getRegistryProvider();
 
+        generator.addProvider(event.includeServer(), datapackProvider);
+        generator.addProvider(event.includeServer(), new ModRecipeProvider(output, lookupProvider));
 //        generator.addProvider(event.includeServer(), new ModLootTableProvider(output, lookupProvider));
 
-        //Server
-
         //Tags
-        ModBlockTagsProvider blockTags = new ModBlockTagsProvider(output, lookupProvider, existingFileHelper);
+        ModBlockTagsProvider blockTags = new ModBlockTagsProvider(output, lookupProvider, helper);
         generator.addProvider(event.includeServer(), blockTags);
-        generator.addProvider(event.includeServer(), new ModItemTagsProvider(output, lookupProvider, blockTags.contentsGetter(), existingFileHelper));
-        generator.addProvider(event.includeServer(), new ModEntityTagsProvider(output, lookupProvider, existingFileHelper));
-
-        //Recipes
-        generator.addProvider(event.includeServer(), new ModRecipeProvider(output, lookupProvider));
+        generator.addProvider(event.includeServer(), new ModItemTagsProvider(output, lookupProvider, blockTags.contentsGetter(), helper));
+        generator.addProvider(event.includeServer(), new ModEntityTagsProvider(output, lookupProvider, helper));
 
         //pack.meta
         generator.addProvider(true, new PackMetadataGenerator(output).add(PackMetadataSection.TYPE, new PackMetadataSection(

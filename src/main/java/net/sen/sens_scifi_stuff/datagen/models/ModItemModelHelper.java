@@ -1,4 +1,4 @@
-package net.sen.sens_scifi_stuff.datagen;
+package net.sen.sens_scifi_stuff.datagen.models;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;

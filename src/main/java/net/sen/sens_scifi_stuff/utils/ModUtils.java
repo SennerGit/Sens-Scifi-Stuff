@@ -16,6 +16,9 @@ public class ModUtils {
     public static String getModId() {
         return SensScifiStuff.MODID.toLowerCase(Locale.ROOT);
     }
+    public static String getMinecraftId() {
+        return "minecraft".toLowerCase(Locale.ROOT);
+    }
 
     public static String getBlockId(Block block) {
         return BuiltInRegistries.BLOCK.getKey(block).getPath().toLowerCase(Locale.ROOT);

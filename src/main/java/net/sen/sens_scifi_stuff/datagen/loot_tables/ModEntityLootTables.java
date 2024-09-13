@@ -1,9 +1,6 @@
 package net.sen.sens_scifi_stuff.datagen.loot_tables;
 
-import com.mojang.blaze3d.shaders.Uniform;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.data.loot.EntityLootSubProvider;
-import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
@@ -15,9 +12,9 @@ import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.sen.sens_scifi_stuff.entities.ModEntities;
 import net.sen.sens_scifi_stuff.items.ModItems;
 
-public class ModEntityLootSubProvider extends EntityLootSubProvider {
-    protected ModEntityLootSubProvider(HolderLookup.Provider registries) {
-        super(FeatureFlags.REGISTRY.allFlags(), registries);
+public class ModEntityLootTables extends ModEntityLootHelper {
+    protected ModEntityLootTables(HolderLookup.Provider registries) {
+        super(registries);
     }
 
     @Override

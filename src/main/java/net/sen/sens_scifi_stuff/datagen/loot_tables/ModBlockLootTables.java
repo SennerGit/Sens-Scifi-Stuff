@@ -1,21 +1,11 @@
 package net.sen.sens_scifi_stuff.datagen.loot_tables;
 
 import net.minecraft.core.HolderLookup;
-import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-import net.neoforged.neoforge.common.ItemAbilities;
-import net.neoforged.neoforge.common.loot.CanItemPerformAbility;
 import net.sen.sens_scifi_stuff.blocks.ModBlocks;
 import net.sen.sens_scifi_stuff.items.ModItems;
 
-import java.util.Set;
-
-public class ModBlockLootGenerator extends ModBlockLootSubProvider {
-//    private static final float[] DEFAULT_SAPLING_DROP_RATES = new float[]{0.05F, 0.0625F, 0.083333336F, 0.1F};
-//    private static final LootItemCondition.Builder HAS_SHEARS = CanItemPerformAbility.canItemPerformAbility(ItemAbilities.SHEARS_DIG);
-
-    public ModBlockLootGenerator(HolderLookup.Provider registries) {
+public class ModBlockLootTables extends ModBlockLootHelper {
+    public ModBlockLootTables(HolderLookup.Provider registries) {
         super(registries);
     }
 

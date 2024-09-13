@@ -7,7 +7,7 @@ import net.minecraft.world.level.storage.loot.LootTable;
 
 import java.util.function.BiConsumer;
 
-public record ModChestLootSubProvider(HolderLookup.Provider provider) implements LootTableSubProvider {
+public record ModFishingLootTables(HolderLookup.Provider provider) implements LootTableSubProvider {
     @Override
     public void generate(BiConsumer<ResourceKey<LootTable>, LootTable.Builder> output) {
 

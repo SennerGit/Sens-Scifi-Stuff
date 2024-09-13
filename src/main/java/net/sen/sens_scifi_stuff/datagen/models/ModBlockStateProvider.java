@@ -1,4 +1,4 @@
-package net.sen.sens_scifi_stuff.datagen;
+package net.sen.sens_scifi_stuff.datagen.models;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -16,9 +16,9 @@ import net.sen.sens_scifi_stuff.utils.ModUtils;
 import java.util.Locale;
 import java.util.function.Supplier;
 
-public class ModBlockStateProvider extends BlockStateProvider {
+public class ModBlockStateProvider extends ModBlockStateHelper {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
-        super(output, ModUtils.getModId(), exFileHelper);
+        super(output, exFileHelper);
     }
 
     @Override
@@ -111,9 +111,5 @@ public class ModBlockStateProvider extends BlockStateProvider {
         
         //Brass
         this.simpleBlock(ModBlocks.BRASS_BLOCK);
-    }
-
-    public void simpleBlock(Supplier<Block> block) {
-        this.simpleBlock(block.get());
     }
 }

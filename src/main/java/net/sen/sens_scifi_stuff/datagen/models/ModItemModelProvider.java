@@ -1,23 +1,9 @@
-package net.sen.sens_scifi_stuff.datagen;
+package net.sen.sens_scifi_stuff.datagen.models;
 
 import net.minecraft.data.PackOutput;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.armortrim.TrimMaterial;
-import net.minecraft.world.item.armortrim.TrimMaterials;
-import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
-import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
-import net.neoforged.neoforge.client.model.generators.ModelFile;
-import net.neoforged.neoforge.client.model.generators.loaders.ItemLayerModelBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.sen.sens_scifi_stuff.SensScifiStuff;
 import net.sen.sens_scifi_stuff.blocks.ModBlocks;
 import net.sen.sens_scifi_stuff.items.ModItems;
-import net.sen.sens_scifi_stuff.utils.ModUtils;
-
-import java.util.function.Supplier;
 
 public class ModItemModelProvider extends ModItemModelHelper {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
