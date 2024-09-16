@@ -409,7 +409,7 @@ public class ModCreativeTabs {
 
     public static final Supplier<CreativeModeTab> PARTSTAB = TABS.register("sens_scifi_stuff_parts_tab", () -> {
         return CreativeModeTab.builder()
-                .withTabsBefore(ResourceLocation.fromNamespaceAndPath(ModUtils.getModId(), ModUtils.getCreativeModeId(SENSSCIFISTUFFCORETAB.get())))
+                .withTabsBefore(ModUtils.getModPath(ModUtils.getCreativeModeId(SENSSCIFISTUFFCORETAB.get())))
                 .icon(() -> new ItemStack(ModItems.SPEEDER_TESLA_MK1_POWER_CELL_ITEM.get()))
                 .title(Component.translatable("itemgroup.sens_scifi_stuff_parts_tab"))
                 .displayItems((itemDisplayParameters, output) -> {
@@ -472,7 +472,7 @@ public class ModCreativeTabs {
 
     public static final Supplier<CreativeModeTab> BASEVEHICLETAB = TABS.register("sens_scifi_stuff_base_vehicle_tab", () -> {
         return CreativeModeTab.builder()
-                .withTabsBefore(ResourceLocation.fromNamespaceAndPath(ModUtils.getModId(), ModUtils.getCreativeModeId(PARTSTAB.get())))
+                .withTabsBefore(ModUtils.getModPath(ModUtils.getCreativeModeId(PARTSTAB.get())))
                 .icon(() -> new ItemStack(ModItems.SPEEDER_ITEM.get()))
                 .title(Component.translatable("itemgroup.sens_scifi_stuff_base_vehicle_tab"))
                 .displayItems((itemDisplayParameters, output) -> {
@@ -483,7 +483,7 @@ public class ModCreativeTabs {
 
     public static final Supplier<CreativeModeTab> MACHINETAB = TABS.register("machine_tab", () -> {
         return CreativeModeTab.builder()
-                .withTabsBefore(ResourceLocation.fromNamespaceAndPath(ModUtils.getModId(), ModUtils.getCreativeModeId(BASEVEHICLETAB.get())))
+                .withTabsBefore(ModUtils.getModPath(ModUtils.getCreativeModeId(BASEVEHICLETAB.get())))
                 .icon(() -> new ItemStack(ModBlocks.WORKBENCH_BLOCK.get()))
                 .title(Component.translatable("itemgroup.machine_tab"))
                 .displayItems((itemDisplayParameters, output) -> {

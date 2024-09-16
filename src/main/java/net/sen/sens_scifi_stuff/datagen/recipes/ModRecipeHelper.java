@@ -21,7 +21,7 @@ public abstract class ModRecipeHelper extends RecipeProvider {
     }
 
     protected final void stairsBlockRecipe(RecipeOutput output, ItemLike result,ItemLike ingredient) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 6)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 4)
                 .pattern("#  ")
                 .pattern("## ")
                 .pattern("###")
@@ -29,6 +29,15 @@ public abstract class ModRecipeHelper extends RecipeProvider {
                 .unlockedBy("has_item", has(ingredient))
                 .group(ModUtils.getItemLikeId(ingredient))
                 .save(output, ModUtils.getModPath("stairs/" + ModUtils.getItemLikeId(result)));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 4)
+                .pattern("  #")
+                .pattern(" ##")
+                .pattern("###")
+                .define('#', Ingredient.of(ingredient))
+                .unlockedBy("has_item", has(ingredient))
+                .group(ModUtils.getItemLikeId(ingredient))
+                .save(output, ModUtils.getModPath("stairs/" + ModUtils.getItemLikeId(result) + "_reverse"));
     }
 
     protected final void fenceBlockRecipe(RecipeOutput output, ItemLike result,ItemLike ingredient) {
@@ -166,7 +175,7 @@ public abstract class ModRecipeHelper extends RecipeProvider {
                 .define('X', Ingredient.of(Tags.Items.RODS_WOODEN))
                 .unlockedBy("has_item", has(ingredient))
                 .group(ModUtils.getItemLikeId(ingredient))
-                .save(output, ModUtils.getModPath("axe/" + ModUtils.getItemLikeId(result) + "_left"));
+                .save(output, ModUtils.getModPath("axe/" + ModUtils.getItemLikeId(result) + "_reverse"));
     }
 
     protected final void shovelRecipe(RecipeOutput output, ItemLike result,ItemLike ingredient) {
@@ -212,7 +221,7 @@ public abstract class ModRecipeHelper extends RecipeProvider {
                 .define('X', Ingredient.of(Tags.Items.RODS_WOODEN))
                 .unlockedBy("has_item", has(ingredient))
                 .group(ModUtils.getItemLikeId(ingredient))
-                .save(output, ModUtils.getModPath("hoe/" + ModUtils.getItemLikeId(result) + "_left"));
+                .save(output, ModUtils.getModPath("hoe/" + ModUtils.getItemLikeId(result) + "_reverse"));
     }
 
     protected final void oreCookingRecipe(RecipeOutput output, ItemLike result, ItemLike ingredients) {

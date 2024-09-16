@@ -11,9 +11,9 @@ import net.sen.sens_scifi_stuff.utils.ModUtils;
 
 import java.util.function.Supplier;
 
-public class EnUsLanguageProvider extends LanguageProvider {
+public class EnUsLanguageProvider extends LanguageProviderHelper {
     public EnUsLanguageProvider(PackOutput output) {
-        super(output, ModUtils.getModId(), "en_us");
+        super(output, "en_us");
     }
 
     @Override
@@ -520,9 +520,5 @@ public class EnUsLanguageProvider extends LanguageProvider {
         this.add("tooltip." + ModUtils.getModId() + ".jump_booster", "Jump Booster");
         this.add("tooltip." + ModUtils.getModId() + ".extra", "Extra");
         this.add("tooltip." + ModUtils.getModId() + ".speeder", "Speeder");
-    }
-
-    private void addCreativeTab(Supplier<CreativeModeTab> creativeTab, String translation) {
-        add("itemgroup." + (BuiltInRegistries.CREATIVE_MODE_TAB.getKey(creativeTab.get()).getPath()), translation);
     }
 }

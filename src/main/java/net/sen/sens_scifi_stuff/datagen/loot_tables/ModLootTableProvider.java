@@ -16,8 +16,8 @@ public class ModLootTableProvider extends LootTableProvider {
     public ModLootTableProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> provider) {
         super(output, ModLootTables.allBuiltin(), List.of(
                 new LootTableProvider.SubProviderEntry(ModBlockLootTables::new, LootContextParamSets.BLOCK),
-                new LootTableProvider.SubProviderEntry(ModChestLootTables::new, LootContextParamSets.CHEST),
                 new LootTableProvider.SubProviderEntry(ModEntityLootTables::new, LootContextParamSets.ENTITY),
+                new LootTableProvider.SubProviderEntry(ModChestLootTables::new, LootContextParamSets.CHEST),
                 new LootTableProvider.SubProviderEntry(ModArchaeologyLootTables::new, LootContextParamSets.ARCHAEOLOGY),
                 new LootTableProvider.SubProviderEntry(ModFishingLootTables::new, LootContextParamSets.FISHING),
                 new LootTableProvider.SubProviderEntry(ModShearingLootTables::new, LootContextParamSets.SHEARING),
