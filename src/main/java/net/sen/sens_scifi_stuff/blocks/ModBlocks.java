@@ -23,76 +23,48 @@ public class ModBlocks {
     /*
     Metals
      */
-    //Iron
-    public static final Supplier<Block> PURE_RAW_IRON_BLOCK = createBlock("pure_raw_iron_block");
-    public static final Supplier<Block> REFINED_IRON_BLOCK = createBlock("refined_iron_block");
-
-    //Copper
-    public static final Supplier<Block> PURE_RAW_COPPER_BLOCK = createBlock("pure_raw_copper_block");
-    public static final Supplier<Block> REFINED_COPPER_BLOCK = createBlock("refined_copper_block");
-
-    //Gold
-    public static final Supplier<Block> PURE_RAW_GOLD_BLOCK = createBlock("pure_raw_gold_block");
-    public static final Supplier<Block> REFINED_GOLD_BLOCK = createBlock("refined_gold_block");
-
     //Steel
     public static final Supplier<Block> STEEL_BLOCK = createBlock("steel_block");
 
     //Tin
     public static final Supplier<Block> ORE_TIN_BLOCK = createBlock("ore_tin_block");
     public static final Supplier<Block> RAW_TIN_BLOCK = createBlock("raw_tin_block");
-    public static final Supplier<Block> PURE_RAW_TIN_BLOCK = createBlock("pure_raw_tin_block");
     public static final Supplier<Block> TIN_BLOCK = createBlock("tin_block");
-    public static final Supplier<Block> REFINED_TIN_BLOCK = createBlock("refined_tin_block");
 
     //Zinc
     public static final Supplier<Block> ORE_ZINC_BLOCK = createBlock("ore_zinc_block");
     public static final Supplier<Block> RAW_ZINC_BLOCK = createBlock("raw_zinc_block");
-    public static final Supplier<Block> PURE_RAW_ZINC_BLOCK = createBlock("pure_raw_zinc_block");
     public static final Supplier<Block> ZINC_BLOCK = createBlock("zinc_block");
-    public static final Supplier<Block> REFINED_ZINC_BLOCK = createBlock("refined_zinc_block");
 
     //Nickel
     public static final Supplier<Block> ORE_NICKEL_BLOCK = createBlock("ore_nickel_block");
     public static final Supplier<Block> RAW_NICKEL_BLOCK = createBlock("raw_nickel_block");
-    public static final Supplier<Block> PURE_RAW_NICKEL_BLOCK = createBlock("pure_raw_nickel_block");
     public static final Supplier<Block> NICKEL_BLOCK = createBlock("nickel_block");
-    public static final Supplier<Block> REFINED_NICKEL_BLOCK = createBlock("refined_nickel_block");
 
     //Invar
     public static final Supplier<Block> ORE_INVAR_BLOCK = createBlock("ore_invar_block");
     public static final Supplier<Block> RAW_INVAR_BLOCK = createBlock("raw_invar_block");
-    public static final Supplier<Block> PURE_RAW_INVAR_BLOCK = createBlock("pure_raw_invar_block");
     public static final Supplier<Block> INVAR_BLOCK = createBlock("invar_block");
-    public static final Supplier<Block> REFINED_INVAR_BLOCK = createBlock("refined_invar_block");
 
     //Lead
     public static final Supplier<Block> ORE_LEAD_BLOCK = createBlock("ore_lead_block");
     public static final Supplier<Block> RAW_LEAD_BLOCK = createBlock("raw_lead_block");
-    public static final Supplier<Block> PURE_RAW_LEAD_BLOCK = createBlock("pure_raw_lead_block");
     public static final Supplier<Block> LEAD_BLOCK = createBlock("lead_block");
-    public static final Supplier<Block> REFINED_LEAD_BLOCK = createBlock("refined_lead_block");
 
     //Silver
     public static final Supplier<Block> ORE_SILVER_BLOCK = createBlock("ore_silver_block");
     public static final Supplier<Block> RAW_SILVER_BLOCK = createBlock("raw_silver_block");
-    public static final Supplier<Block> PURE_RAW_SILVER_BLOCK = createBlock("pure_raw_silver_block");
     public static final Supplier<Block> SILVER_BLOCK = createBlock("silver_block");
-    public static final Supplier<Block> REFINED_SILVER_BLOCK = createBlock("refined_silver_block");
 
     //Electrum
     public static final Supplier<Block> ORE_ELECTRUM_BLOCK = createBlock("ore_electrum_block");
     public static final Supplier<Block> RAW_ELECTRUM_BLOCK = createBlock("raw_electrum_block");
-    public static final Supplier<Block> PURE_RAW_ELECTRUM_BLOCK = createBlock("pure_raw_electrum_block");
     public static final Supplier<Block> ELECTRUM_BLOCK = createBlock("electrum_block");
-    public static final Supplier<Block> REFINED_ELECTRUM_BLOCK = createBlock("refined_electrum_block");
 
     //Uranium
     public static final Supplier<Block> ORE_URANIUM_BLOCK = createBlock("ore_uranium_block");
     public static final Supplier<Block> RAW_URANIUM_BLOCK = createBlock("raw_uranium_block");
-    public static final Supplier<Block> PURE_RAW_URANIUM_BLOCK = createBlock("pure_raw_uranium_block");
     public static final Supplier<Block> URANIUM_BLOCK = createBlock("uranium_block");
-    public static final Supplier<Block> REFINED_URANIUM_BLOCK = createBlock("refined_uranium_block");
 
     //Bronze
     public static final Supplier<Block> BRONZE_BLOCK = createBlock("bronze_block");

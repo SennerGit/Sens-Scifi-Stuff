@@ -14,26 +14,16 @@ import net.sen.sens_scifi_stuff.SensScifiStuff;
 import java.util.function.Supplier;
 
 public enum ModItemTeirs implements Tier {
-    REFINED_IRON(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    REFINED_COPPER(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    REFINED_GOLD(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    STEEL(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    TIN(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    REFINED_TIN(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    ZINC(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    REFINED_ZINC(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    NICKEL(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    REFINED_NICKEL(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    INVAR(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    REFINED_INVAR(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    LEAD(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    REFINED_LEAD(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    SILVER(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    REFINED_SILVER(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    ELECTRUM(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    REFINED_ELECTRUM(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    BRONZE(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
-    BRASS(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.REFINED_IRON_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
+    STEEL(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.STEEL_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
+    TIN(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.TIN_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
+    ZINC(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.ZINC_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
+    NICKEL(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.NICKEL_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
+    INVAR(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.INVAR_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
+    LEAD(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.LEAD_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
+    SILVER(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.SILVER_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
+    ELECTRUM(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.ELECTRUM_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
+    BRONZE(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.BRONZE_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
+    BRASS(286, 6.0f, 3.0f, 8, () -> Ingredient.of(ModItems.BRASS_INGOT_ITEM.get()), BlockTags.INCORRECT_FOR_IRON_TOOL),
     ;
 
     private final int durability;

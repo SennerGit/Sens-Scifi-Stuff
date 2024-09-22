@@ -125,6 +125,14 @@ public abstract class ModItemModelHelper extends ItemModelProvider {
         return builder;
     }
 
+    protected void createToolSet(Supplier<Item> sword, Supplier<Item> pickaxe, Supplier<Item> axe, Supplier<Item> shovel, Supplier<Item> hoe) {
+        handheldItem(sword);
+        handheldItem(pickaxe);
+        handheldItem(axe);
+        handheldItem(shovel);
+        handheldItem(hoe);
+    }
+
     protected ItemModelBuilder handheldItem(Supplier<Item> item) {
         return withExistingParent(ModUtils.getItemId(item.get()),
                 ModUtils.getMinecraftPath("item/handheld")).texture("layer0",

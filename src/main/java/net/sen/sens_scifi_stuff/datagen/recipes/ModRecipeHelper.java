@@ -261,40 +261,19 @@ public abstract class ModRecipeHelper extends RecipeProvider {
         breakdownCompressRecipe(output, singleItem, compressed);
     }
 
-    protected final void vanillaMetalRecipes(RecipeOutput output, ItemLike ingot, ItemLike pure_raw, ItemLike pure_raw_block, ItemLike refined_ingot, ItemLike refined_metal_block, ItemLike refined_nugget, ItemLike dust, ItemLike refined_dust,
+    protected final void vanillaMetalRecipes(RecipeOutput output, ItemLike ingot, ItemLike dust, ItemLike refined_dust,
         ItemLike refined_sword, ItemLike refined_axe, ItemLike refined_shovel, ItemLike refined_pickaxe, ItemLike refined_hoe, ItemLike refined_shield, ItemLike refined_boots, ItemLike refined_leggings, ItemLike refined_chestplate, ItemLike refined_helmet) {
         oreCookingRecipe(output, ingot, dust);
-        oreCookingRecipe(output, refined_ingot, pure_raw);
-        oreCookingRecipe(output, refined_ingot, refined_dust);
-        makeAndBreakRecipe(output, pure_raw_block, pure_raw);
-        makeAndBreakRecipe(output, refined_metal_block, refined_ingot);
-        makeAndBreakRecipe(output, refined_ingot, refined_nugget);
-        swordRecipe(output, refined_sword, refined_ingot);
-        axeRecipe(output, refined_axe, refined_ingot);
-        shovelRecipe(output, refined_shovel, refined_ingot);
-        pickaxeRecipe(output, refined_pickaxe, refined_ingot);
-        hoeRecipe(output, refined_hoe, refined_ingot);
-        shieldRecipe(output, refined_shield, refined_ingot);
-        bootsRecipe(output, refined_boots, refined_ingot);
-        leggingsRecipe(output, refined_leggings, refined_ingot);
-        chestplateRecipe(output, refined_chestplate, refined_ingot);
-        helmetRecipe(output, refined_helmet, refined_ingot);
     }
 
-    protected final void metalRecipes(RecipeOutput output, ItemLike ore, ItemLike raw, ItemLike raw_block, ItemLike pure_raw, ItemLike pure_raw_block, ItemLike ingot, ItemLike metal_block, ItemLike refined_ingot, ItemLike refined_metal_block, ItemLike nugget, ItemLike refined_nugget, ItemLike dust, ItemLike refined_dust,
-    ItemLike sword, ItemLike axe, ItemLike shovel, ItemLike pickaxe, ItemLike hoe, ItemLike shield, ItemLike boots, ItemLike leggings, ItemLike chestplate, ItemLike helmet,
-    ItemLike refined_sword, ItemLike refined_axe, ItemLike refined_shovel, ItemLike refined_pickaxe, ItemLike refined_hoe, ItemLike refined_shield, ItemLike refined_boots, ItemLike refined_leggings, ItemLike refined_chestplate, ItemLike refined_helmet) {
+    protected final void metalRecipes(RecipeOutput output, ItemLike ore, ItemLike raw, ItemLike raw_block, ItemLike ingot, ItemLike metal_block, ItemLike nugget, ItemLike dust,
+    ItemLike sword, ItemLike axe, ItemLike shovel, ItemLike pickaxe, ItemLike hoe, ItemLike shield, ItemLike boots, ItemLike leggings, ItemLike chestplate, ItemLike helmet) {
         oreCookingRecipe(output, ingot, ore);
         oreCookingRecipe(output, ingot, dust);
         oreCookingRecipe(output, ingot, raw);
-        oreCookingRecipe(output, refined_ingot, refined_dust);
-        oreCookingRecipe(output, refined_ingot, pure_raw);
         makeAndBreakRecipe(output, raw_block, raw);
-        makeAndBreakRecipe(output, pure_raw_block, pure_raw);
         makeAndBreakRecipe(output, metal_block, ingot);
-        makeAndBreakRecipe(output, refined_metal_block, refined_ingot);
         makeAndBreakRecipe(output, ingot, nugget);
-        makeAndBreakRecipe(output, refined_ingot, refined_nugget);
         swordRecipe(output, sword, ingot);
         axeRecipe(output, axe, ingot);
         shovelRecipe(output, shovel, ingot);
@@ -305,16 +284,6 @@ public abstract class ModRecipeHelper extends RecipeProvider {
         leggingsRecipe(output, leggings, ingot);
         chestplateRecipe(output, chestplate, ingot);
         helmetRecipe(output, helmet, ingot);
-        swordRecipe(output, refined_sword, refined_ingot);
-        axeRecipe(output, refined_axe, refined_ingot);
-        shovelRecipe(output, refined_shovel, refined_ingot);
-        pickaxeRecipe(output, refined_pickaxe, refined_ingot);
-        hoeRecipe(output, refined_hoe, refined_ingot);
-        shieldRecipe(output, refined_shield, refined_ingot);
-        bootsRecipe(output, refined_boots, refined_ingot);
-        leggingsRecipe(output, refined_leggings, refined_ingot);
-        chestplateRecipe(output, refined_chestplate, refined_ingot);
-        helmetRecipe(output, refined_helmet, refined_ingot);
     }
 
     protected final void metalRecipes(RecipeOutput output, ItemLike ore, ItemLike raw, ItemLike raw_block, ItemLike pure_raw, ItemLike pure_raw_block, ItemLike ingot, ItemLike metal_block, ItemLike refined_ingot, ItemLike refined_metal_block, ItemLike nugget, ItemLike refined_nugget, ItemLike dust, ItemLike refined_dust) {
@@ -338,26 +307,6 @@ public abstract class ModRecipeHelper extends RecipeProvider {
         makeAndBreakRecipe(output, raw_block, raw);
         makeAndBreakRecipe(output, metal_block, ingot);
         makeAndBreakRecipe(output, ingot, nugget);
-    }
-
-    protected final void metalRecipes(RecipeOutput output, ItemLike ore, ItemLike raw, ItemLike raw_block, ItemLike ingot, ItemLike metal_block, ItemLike nugget, ItemLike dust,
-    ItemLike sword, ItemLike axe, ItemLike shovel, ItemLike pickaxe, ItemLike hoe, ItemLike shield, ItemLike boots, ItemLike leggings, ItemLike chestplate, ItemLike helmet) {
-        oreCookingRecipe(output, ingot, ore);
-        oreCookingRecipe(output, ingot, dust);
-        oreCookingRecipe(output, ingot, raw);
-        makeAndBreakRecipe(output, raw_block, raw);
-        makeAndBreakRecipe(output, metal_block, ingot);
-        makeAndBreakRecipe(output, ingot, nugget);
-        swordRecipe(output, sword, ingot);
-        axeRecipe(output, axe, ingot);
-        shovelRecipe(output, shovel, ingot);
-        pickaxeRecipe(output, pickaxe, ingot);
-        hoeRecipe(output, hoe, ingot);
-        shieldRecipe(output, shield, ingot);
-        bootsRecipe(output, boots, ingot);
-        leggingsRecipe(output, leggings, ingot);
-        chestplateRecipe(output, chestplate, ingot);
-        helmetRecipe(output, helmet, ingot);
     }
 
     protected final void alloyRecipes(RecipeOutput output, ItemLike mix, ItemLike ingot, ItemLike metal_block, ItemLike nugget, ItemLike dust,

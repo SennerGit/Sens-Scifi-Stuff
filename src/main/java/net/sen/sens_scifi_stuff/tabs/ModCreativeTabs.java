@@ -37,62 +37,10 @@ public class ModCreativeTabs {
                     output.accept(ModItems.FUERZA_POWDER_ITEM.get());
                     output.accept(ModItems.FUERZA_CRYSTAL_ITEM.get());
 
-                    //Iron
+                    //Vanilla
                     output.accept(ModItems.IRON_DUST_ITEM.get());
-                    output.accept(ModItems.PURE_RAW_IRON_ITEM.get());
-                    output.accept(ModItems.REFINED_IRON_INGOT_ITEM.get());
-                    output.accept(ModItems.REFINED_IRON_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_IRON_DUST_ITEM.get());
-                    output.accept(ModBlocks.PURE_RAW_IRON_BLOCK.get());
-                    output.accept(ModBlocks.REFINED_IRON_BLOCK.get());
-                    output.accept(ModItems.REFINED_IRON_SWORD_ITEM.get());
-                    output.accept(ModItems.REFINED_IRON_HOE_ITEM.get());
-                    output.accept(ModItems.REFINED_IRON_SHOVEL_ITEM.get());
-                    output.accept(ModItems.REFINED_IRON_AXE_ITEM.get());
-                    output.accept(ModItems.REFINED_IRON_PICKAXE_ITEM.get());
-                    output.accept(ModItems.REFINED_IRON_SHIELD_ITEM.get());
-                    output.accept(ModItems.REFINED_IRON_BOOTS_ITEM.get());
-                    output.accept(ModItems.REFINED_IRON_LEGGINGS_ITEM.get());
-                    output.accept(ModItems.REFINED_IRON_CHESTPLATE_ITEM.get());
-                    output.accept(ModItems.REFINED_IRON_HELMET_ITEM.get());
-
-                    //Copper
                     output.accept(ModItems.COPPER_DUST_ITEM.get());
-                    output.accept(ModItems.PURE_RAW_COPPER_ITEM.get());
-                    output.accept(ModItems.REFINED_COPPER_INGOT_ITEM.get());
-                    output.accept(ModItems.REFINED_COPPER_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_COPPER_DUST_ITEM.get());
-                    output.accept(ModBlocks.PURE_RAW_COPPER_BLOCK.get());
-                    output.accept(ModBlocks.REFINED_COPPER_BLOCK.get());
-                    output.accept(ModItems.REFINED_COPPER_SWORD_ITEM.get());
-                    output.accept(ModItems.REFINED_COPPER_HOE_ITEM.get());
-                    output.accept(ModItems.REFINED_COPPER_SHOVEL_ITEM.get());
-                    output.accept(ModItems.REFINED_COPPER_AXE_ITEM.get());
-                    output.accept(ModItems.REFINED_COPPER_PICKAXE_ITEM.get());
-                    output.accept(ModItems.REFINED_COPPER_SHIELD_ITEM.get());
-                    output.accept(ModItems.REFINED_COPPER_BOOTS_ITEM.get());
-                    output.accept(ModItems.REFINED_COPPER_LEGGINGS_ITEM.get());
-                    output.accept(ModItems.REFINED_COPPER_CHESTPLATE_ITEM.get());
-                    output.accept(ModItems.REFINED_COPPER_HELMET_ITEM.get());
-
-                    //Gold
                     output.accept(ModItems.GOLD_DUST_ITEM.get());
-                    output.accept(ModItems.PURE_RAW_GOLD_ITEM.get());
-                    output.accept(ModItems.REFINED_GOLD_INGOT_ITEM.get());
-                    output.accept(ModItems.REFINED_GOLD_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_GOLD_DUST_ITEM.get());
-                    output.accept(ModBlocks.PURE_RAW_GOLD_BLOCK.get());
-                    output.accept(ModBlocks.REFINED_GOLD_BLOCK.get());
-                    output.accept(ModItems.REFINED_GOLD_SWORD_ITEM.get());
-                    output.accept(ModItems.REFINED_GOLD_HOE_ITEM.get());
-                    output.accept(ModItems.REFINED_GOLD_SHOVEL_ITEM.get());
-                    output.accept(ModItems.REFINED_GOLD_AXE_ITEM.get());
-                    output.accept(ModItems.REFINED_GOLD_PICKAXE_ITEM.get());
-                    output.accept(ModItems.REFINED_GOLD_SHIELD_ITEM.get());
-                    output.accept(ModItems.REFINED_GOLD_BOOTS_ITEM.get());
-                    output.accept(ModItems.REFINED_GOLD_LEGGINGS_ITEM.get());
-                    output.accept(ModItems.REFINED_GOLD_CHESTPLATE_ITEM.get());
-                    output.accept(ModItems.REFINED_GOLD_HELMET_ITEM.get());
 
                     //Steel
                     output.accept(ModItems.RAW_STEEL_MIX_ITEM.get());
@@ -113,18 +61,12 @@ public class ModCreativeTabs {
 
                     //Tin
                     output.accept(ModItems.RAW_TIN_ITEM.get());
-                    output.accept(ModItems.PURE_RAW_TIN_ITEM.get());
                     output.accept(ModItems.TIN_DUST_ITEM.get());
                     output.accept(ModItems.TIN_INGOT_ITEM.get());
                     output.accept(ModItems.TIN_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_TIN_INGOT_ITEM.get());
-                    output.accept(ModItems.REFINED_TIN_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_TIN_DUST_ITEM.get());
                     output.accept(ModBlocks.ORE_TIN_BLOCK.get());
                     output.accept(ModBlocks.RAW_TIN_BLOCK.get());
-                    output.accept(ModBlocks.PURE_RAW_TIN_BLOCK.get());
                     output.accept(ModBlocks.TIN_BLOCK.get());
-                    output.accept(ModBlocks.REFINED_TIN_BLOCK.get());
                     output.accept(ModItems.TIN_SWORD_ITEM.get());
                     output.accept(ModItems.TIN_HOE_ITEM.get());
                     output.accept(ModItems.TIN_SHOVEL_ITEM.get());
@@ -135,31 +77,15 @@ public class ModCreativeTabs {
                     output.accept(ModItems.TIN_LEGGINGS_ITEM.get());
                     output.accept(ModItems.TIN_CHESTPLATE_ITEM.get());
                     output.accept(ModItems.TIN_HELMET_ITEM.get());
-                    output.accept(ModItems.REFINED_TIN_SWORD_ITEM.get());
-                    output.accept(ModItems.REFINED_TIN_HOE_ITEM.get());
-                    output.accept(ModItems.REFINED_TIN_SHOVEL_ITEM.get());
-                    output.accept(ModItems.REFINED_TIN_AXE_ITEM.get());
-                    output.accept(ModItems.REFINED_TIN_PICKAXE_ITEM.get());
-                    output.accept(ModItems.REFINED_TIN_SHIELD_ITEM.get());
-                    output.accept(ModItems.REFINED_TIN_BOOTS_ITEM.get());
-                    output.accept(ModItems.REFINED_TIN_LEGGINGS_ITEM.get());
-                    output.accept(ModItems.REFINED_TIN_CHESTPLATE_ITEM.get());
-                    output.accept(ModItems.REFINED_TIN_HELMET_ITEM.get());
 
                     //Zinc
                     output.accept(ModItems.RAW_ZINC_ITEM.get());
-                    output.accept(ModItems.PURE_RAW_ZINC_ITEM.get());
                     output.accept(ModItems.ZINC_DUST_ITEM.get());
                     output.accept(ModItems.ZINC_INGOT_ITEM.get());
                     output.accept(ModItems.ZINC_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_ZINC_INGOT_ITEM.get());
-                    output.accept(ModItems.REFINED_ZINC_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_ZINC_DUST_ITEM.get());
                     output.accept(ModBlocks.ORE_ZINC_BLOCK.get());
                     output.accept(ModBlocks.RAW_ZINC_BLOCK.get());
-                    output.accept(ModBlocks.PURE_RAW_ZINC_BLOCK.get());
                     output.accept(ModBlocks.ZINC_BLOCK.get());
-                    output.accept(ModBlocks.REFINED_ZINC_BLOCK.get());
                     output.accept(ModItems.ZINC_SWORD_ITEM.get());
                     output.accept(ModItems.ZINC_HOE_ITEM.get());
                     output.accept(ModItems.ZINC_SHOVEL_ITEM.get());
@@ -170,31 +96,15 @@ public class ModCreativeTabs {
                     output.accept(ModItems.ZINC_LEGGINGS_ITEM.get());
                     output.accept(ModItems.ZINC_CHESTPLATE_ITEM.get());
                     output.accept(ModItems.ZINC_HELMET_ITEM.get());
-                    output.accept(ModItems.REFINED_ZINC_SWORD_ITEM.get());
-                    output.accept(ModItems.REFINED_ZINC_HOE_ITEM.get());
-                    output.accept(ModItems.REFINED_ZINC_SHOVEL_ITEM.get());
-                    output.accept(ModItems.REFINED_ZINC_AXE_ITEM.get());
-                    output.accept(ModItems.REFINED_ZINC_PICKAXE_ITEM.get());
-                    output.accept(ModItems.REFINED_ZINC_SHIELD_ITEM.get());
-                    output.accept(ModItems.REFINED_ZINC_BOOTS_ITEM.get());
-                    output.accept(ModItems.REFINED_ZINC_LEGGINGS_ITEM.get());
-                    output.accept(ModItems.REFINED_ZINC_CHESTPLATE_ITEM.get());
-                    output.accept(ModItems.REFINED_ZINC_HELMET_ITEM.get());
 
                     //Nickel
                     output.accept(ModItems.RAW_NICKEL_ITEM.get());
-                    output.accept(ModItems.PURE_RAW_NICKEL_ITEM.get());
                     output.accept(ModItems.NICKEL_DUST_ITEM.get());
                     output.accept(ModItems.NICKEL_INGOT_ITEM.get());
                     output.accept(ModItems.NICKEL_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_NICKEL_INGOT_ITEM.get());
-                    output.accept(ModItems.REFINED_NICKEL_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_NICKEL_DUST_ITEM.get());
                     output.accept(ModBlocks.ORE_NICKEL_BLOCK.get());
                     output.accept(ModBlocks.RAW_NICKEL_BLOCK.get());
-                    output.accept(ModBlocks.PURE_RAW_NICKEL_BLOCK.get());
                     output.accept(ModBlocks.NICKEL_BLOCK.get());
-                    output.accept(ModBlocks.REFINED_NICKEL_BLOCK.get());
                     output.accept(ModItems.NICKEL_SWORD_ITEM.get());
                     output.accept(ModItems.NICKEL_HOE_ITEM.get());
                     output.accept(ModItems.NICKEL_SHOVEL_ITEM.get());
@@ -205,31 +115,15 @@ public class ModCreativeTabs {
                     output.accept(ModItems.NICKEL_LEGGINGS_ITEM.get());
                     output.accept(ModItems.NICKEL_CHESTPLATE_ITEM.get());
                     output.accept(ModItems.NICKEL_HELMET_ITEM.get());
-                    output.accept(ModItems.REFINED_NICKEL_SWORD_ITEM.get());
-                    output.accept(ModItems.REFINED_NICKEL_HOE_ITEM.get());
-                    output.accept(ModItems.REFINED_NICKEL_SHOVEL_ITEM.get());
-                    output.accept(ModItems.REFINED_NICKEL_AXE_ITEM.get());
-                    output.accept(ModItems.REFINED_NICKEL_PICKAXE_ITEM.get());
-                    output.accept(ModItems.REFINED_NICKEL_SHIELD_ITEM.get());
-                    output.accept(ModItems.REFINED_NICKEL_BOOTS_ITEM.get());
-                    output.accept(ModItems.REFINED_NICKEL_LEGGINGS_ITEM.get());
-                    output.accept(ModItems.REFINED_NICKEL_CHESTPLATE_ITEM.get());
-                    output.accept(ModItems.REFINED_NICKEL_HELMET_ITEM.get());
 
                     //Invar
                     output.accept(ModItems.RAW_INVAR_ITEM.get());
-                    output.accept(ModItems.PURE_RAW_INVAR_ITEM.get());
                     output.accept(ModItems.INVAR_DUST_ITEM.get());
                     output.accept(ModItems.INVAR_INGOT_ITEM.get());
                     output.accept(ModItems.INVAR_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_INVAR_INGOT_ITEM.get());
-                    output.accept(ModItems.REFINED_INVAR_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_INVAR_DUST_ITEM.get());
                     output.accept(ModBlocks.ORE_INVAR_BLOCK.get());
                     output.accept(ModBlocks.RAW_INVAR_BLOCK.get());
-                    output.accept(ModBlocks.PURE_RAW_INVAR_BLOCK.get());
                     output.accept(ModBlocks.INVAR_BLOCK.get());
-                    output.accept(ModBlocks.REFINED_INVAR_BLOCK.get());
                     output.accept(ModItems.INVAR_SWORD_ITEM.get());
                     output.accept(ModItems.INVAR_HOE_ITEM.get());
                     output.accept(ModItems.INVAR_SHOVEL_ITEM.get());
@@ -240,31 +134,15 @@ public class ModCreativeTabs {
                     output.accept(ModItems.INVAR_LEGGINGS_ITEM.get());
                     output.accept(ModItems.INVAR_CHESTPLATE_ITEM.get());
                     output.accept(ModItems.INVAR_HELMET_ITEM.get());
-                    output.accept(ModItems.REFINED_INVAR_SWORD_ITEM.get());
-                    output.accept(ModItems.REFINED_INVAR_HOE_ITEM.get());
-                    output.accept(ModItems.REFINED_INVAR_SHOVEL_ITEM.get());
-                    output.accept(ModItems.REFINED_INVAR_AXE_ITEM.get());
-                    output.accept(ModItems.REFINED_INVAR_PICKAXE_ITEM.get());
-                    output.accept(ModItems.REFINED_INVAR_SHIELD_ITEM.get());
-                    output.accept(ModItems.REFINED_INVAR_BOOTS_ITEM.get());
-                    output.accept(ModItems.REFINED_INVAR_LEGGINGS_ITEM.get());
-                    output.accept(ModItems.REFINED_INVAR_CHESTPLATE_ITEM.get());
-                    output.accept(ModItems.REFINED_INVAR_HELMET_ITEM.get());
 
                     //Lead
                     output.accept(ModItems.RAW_LEAD_ITEM.get());
-                    output.accept(ModItems.PURE_RAW_LEAD_ITEM.get());
                     output.accept(ModItems.LEAD_DUST_ITEM.get());
                     output.accept(ModItems.LEAD_INGOT_ITEM.get());
                     output.accept(ModItems.LEAD_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_LEAD_INGOT_ITEM.get());
-                    output.accept(ModItems.REFINED_LEAD_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_LEAD_DUST_ITEM.get());
                     output.accept(ModBlocks.ORE_LEAD_BLOCK.get());
                     output.accept(ModBlocks.RAW_LEAD_BLOCK.get());
-                    output.accept(ModBlocks.PURE_RAW_LEAD_BLOCK.get());
                     output.accept(ModBlocks.LEAD_BLOCK.get());
-                    output.accept(ModBlocks.REFINED_LEAD_BLOCK.get());
                     output.accept(ModItems.LEAD_SWORD_ITEM.get());
                     output.accept(ModItems.LEAD_HOE_ITEM.get());
                     output.accept(ModItems.LEAD_SHOVEL_ITEM.get());
@@ -274,31 +152,15 @@ public class ModCreativeTabs {
                     output.accept(ModItems.LEAD_LEGGINGS_ITEM.get());
                     output.accept(ModItems.LEAD_CHESTPLATE_ITEM.get());
                     output.accept(ModItems.LEAD_HELMET_ITEM.get());
-                    output.accept(ModItems.REFINED_LEAD_SWORD_ITEM.get());
-                    output.accept(ModItems.REFINED_LEAD_HOE_ITEM.get());
-                    output.accept(ModItems.REFINED_LEAD_SHOVEL_ITEM.get());
-                    output.accept(ModItems.REFINED_LEAD_AXE_ITEM.get());
-                    output.accept(ModItems.REFINED_LEAD_PICKAXE_ITEM.get());
-                    output.accept(ModItems.REFINED_LEAD_SHIELD_ITEM.get());
-                    output.accept(ModItems.REFINED_LEAD_BOOTS_ITEM.get());
-                    output.accept(ModItems.REFINED_LEAD_LEGGINGS_ITEM.get());
-                    output.accept(ModItems.REFINED_LEAD_CHESTPLATE_ITEM.get());
-                    output.accept(ModItems.REFINED_LEAD_HELMET_ITEM.get());
 
                     //Silver
                     output.accept(ModItems.RAW_SILVER_ITEM.get());
-                    output.accept(ModItems.PURE_RAW_SILVER_ITEM.get());
                     output.accept(ModItems.SILVER_DUST_ITEM.get());
                     output.accept(ModItems.SILVER_INGOT_ITEM.get());
                     output.accept(ModItems.SILVER_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_SILVER_INGOT_ITEM.get());
-                    output.accept(ModItems.REFINED_SILVER_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_SILVER_DUST_ITEM.get());
                     output.accept(ModBlocks.ORE_SILVER_BLOCK.get());
                     output.accept(ModBlocks.RAW_SILVER_BLOCK.get());
-                    output.accept(ModBlocks.PURE_RAW_SILVER_BLOCK.get());
                     output.accept(ModBlocks.SILVER_BLOCK.get());
-                    output.accept(ModBlocks.REFINED_SILVER_BLOCK.get());
                     output.accept(ModItems.SILVER_SWORD_ITEM.get());
                     output.accept(ModItems.SILVER_HOE_ITEM.get());
                     output.accept(ModItems.SILVER_SHOVEL_ITEM.get());
@@ -309,31 +171,15 @@ public class ModCreativeTabs {
                     output.accept(ModItems.SILVER_LEGGINGS_ITEM.get());
                     output.accept(ModItems.SILVER_CHESTPLATE_ITEM.get());
                     output.accept(ModItems.SILVER_HELMET_ITEM.get());
-                    output.accept(ModItems.REFINED_SILVER_SWORD_ITEM.get());
-                    output.accept(ModItems.REFINED_SILVER_HOE_ITEM.get());
-                    output.accept(ModItems.REFINED_SILVER_SHOVEL_ITEM.get());
-                    output.accept(ModItems.REFINED_SILVER_AXE_ITEM.get());
-                    output.accept(ModItems.REFINED_SILVER_PICKAXE_ITEM.get());
-                    output.accept(ModItems.REFINED_SILVER_SHIELD_ITEM.get());
-                    output.accept(ModItems.REFINED_SILVER_BOOTS_ITEM.get());
-                    output.accept(ModItems.REFINED_SILVER_LEGGINGS_ITEM.get());
-                    output.accept(ModItems.REFINED_SILVER_CHESTPLATE_ITEM.get());
-                    output.accept(ModItems.REFINED_SILVER_HELMET_ITEM.get());
 
                     //Electrum
                     output.accept(ModItems.RAW_ELECTRUM_ITEM.get());
-                    output.accept(ModItems.PURE_RAW_ELECTRUM_ITEM.get());
                     output.accept(ModItems.ELECTRUM_DUST_ITEM.get());
                     output.accept(ModItems.ELECTRUM_INGOT_ITEM.get());
                     output.accept(ModItems.ELECTRUM_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_ELECTRUM_INGOT_ITEM.get());
-                    output.accept(ModItems.REFINED_ELECTRUM_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_ELECTRUM_DUST_ITEM.get());
                     output.accept(ModBlocks.ORE_ELECTRUM_BLOCK.get());
                     output.accept(ModBlocks.RAW_ELECTRUM_BLOCK.get());
-                    output.accept(ModBlocks.PURE_RAW_ELECTRUM_BLOCK.get());
                     output.accept(ModBlocks.ELECTRUM_BLOCK.get());
-                    output.accept(ModBlocks.REFINED_ELECTRUM_BLOCK.get());
                     output.accept(ModItems.ELECTRUM_SWORD_ITEM.get());
                     output.accept(ModItems.ELECTRUM_HOE_ITEM.get());
                     output.accept(ModItems.ELECTRUM_SHOVEL_ITEM.get());
@@ -344,31 +190,15 @@ public class ModCreativeTabs {
                     output.accept(ModItems.ELECTRUM_LEGGINGS_ITEM.get());
                     output.accept(ModItems.ELECTRUM_CHESTPLATE_ITEM.get());
                     output.accept(ModItems.ELECTRUM_HELMET_ITEM.get());
-                    output.accept(ModItems.REFINED_ELECTRUM_SWORD_ITEM.get());
-                    output.accept(ModItems.REFINED_ELECTRUM_HOE_ITEM.get());
-                    output.accept(ModItems.REFINED_ELECTRUM_SHOVEL_ITEM.get());
-                    output.accept(ModItems.REFINED_ELECTRUM_AXE_ITEM.get());
-                    output.accept(ModItems.REFINED_ELECTRUM_PICKAXE_ITEM.get());
-                    output.accept(ModItems.REFINED_ELECTRUM_SHIELD_ITEM.get());
-                    output.accept(ModItems.REFINED_ELECTRUM_BOOTS_ITEM.get());
-                    output.accept(ModItems.REFINED_ELECTRUM_LEGGINGS_ITEM.get());
-                    output.accept(ModItems.REFINED_ELECTRUM_CHESTPLATE_ITEM.get());
-                    output.accept(ModItems.REFINED_ELECTRUM_HELMET_ITEM.get());
 
                     //Uranium
                     output.accept(ModItems.RAW_URANIUM_ITEM.get());
-                    output.accept(ModItems.PURE_RAW_URANIUM_ITEM.get());
                     output.accept(ModItems.URANIUM_DUST_ITEM.get());
                     output.accept(ModItems.URANIUM_INGOT_ITEM.get());
                     output.accept(ModItems.URANIUM_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_URANIUM_INGOT_ITEM.get());
-                    output.accept(ModItems.REFINED_URANIUM_NUGGET_ITEM.get());
-                    output.accept(ModItems.REFINED_URANIUM_DUST_ITEM.get());
                     output.accept(ModBlocks.ORE_URANIUM_BLOCK.get());
                     output.accept(ModBlocks.RAW_URANIUM_BLOCK.get());
-                    output.accept(ModBlocks.PURE_RAW_URANIUM_BLOCK.get());
                     output.accept(ModBlocks.URANIUM_BLOCK.get());
-                    output.accept(ModBlocks.REFINED_URANIUM_BLOCK.get());
 
                     //Bronze
                     output.accept(ModItems.RAW_BRONZE_MIX_ITEM.get());

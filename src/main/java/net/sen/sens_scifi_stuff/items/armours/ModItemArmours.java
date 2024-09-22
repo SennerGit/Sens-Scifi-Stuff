@@ -5,7 +5,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 
 public class ModItemArmours extends ArmorItem {
-    public ModItemArmours(Holder<ArmorMaterial> material, Type type, Properties properties) {
-        super(material, type, properties);
+    public ModItemArmours(Holder<ArmorMaterial> material, Type type, Properties properties, int durability) {
+        super(material, type, properties.stacksTo(1).durability(durability));
     }
 }
